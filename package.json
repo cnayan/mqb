@@ -1,0 +1,17 @@
+{
+  "name": "micro-query-builder",
+  "version": "0.0.1",
+  "author": "Nayan Choudhary",
+  "description": "Gives API to generate Q-Server's JSON query object",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "gen": "cd antlr && java -jar antlr-4.7-complete.jar -Dlanguage=JavaScript select.g4 && cd .."
+  },
+  "dependencies": {
+    "antlr4": "^4.7.0",
+    "util": "^0.10.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
