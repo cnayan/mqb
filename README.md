@@ -303,7 +303,7 @@ The returned object format is already explained by documentation of Q-Server.
 
 # How to build
 > The Pre-requsites are:
-> * Download [Antlr 4](http://www.antlr.org/download.html) (complete, jar). Keep it accessible in `antlr` folder.
+> * Download [Antlr 4](http://www.antlr.org/download.html) (complete, jar). Keep it in `antlr` folder.
 > * Make sure the environment is configured to run Antlr jar file (like, JRE 8+ is installed, and environment variables set, if needed.)
 
 1. Run antlr to generate the lexer and parser files, from command prompt:
@@ -311,6 +311,6 @@ The returned object format is already explained by documentation of Q-Server.
 2. Run `npm start`.
 
 # Caveats
-There are a few, which correspond to the ones in Q-Server. They:
+There are a few, which correspond to the ones in Q-Server. They are:
 1. Only select and count can be queried. No other supported yet.
 2. Except the above documented operators and expressions, others are not supported yet.
