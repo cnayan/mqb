@@ -73,7 +73,7 @@ Some examples:
     // [100, 101, 102].
     `employeeTable(employee_id ![100, 101, 102])`
 
-    // Returns all fields from 'employeeTable' where 'employee_name' starts with text 'Mary',
+    // Returns all fields from 'employeeTable' where 'employee_name' starts with text 'Jane',
     // limited to first entry.
     `1 * employeeTable(employee_name = "Jane*")`
 
@@ -99,7 +99,7 @@ Some examples:
     // or equal to 100, sorted by assesment_status, employee_id and employee_name, in the given order.
     `employeeTable (employee_id >= 100) {assesment_status,employee_id,employee_name}[employee_id, employee_name]`
 
-    // Returns top 7 rows, with 'employee_id', 'employee_name' and 'business_unit' fields from 'employeeTable'
+    // Returns top 7 records, with 'employee_id', 'employee_name' and 'business_unit' fields from 'employeeTable'
     // where 'employee_id' matches pattern *816517* (contains 816517), sorted by 'employee_id'.
     // This is also an example to show than the query can be split across multiple lines.
     `7 * employeeTable (
@@ -127,12 +127,12 @@ Some examples:
     // The corresponding SQL query would be:
     //      SELECT * FROM employeeTable
     //      WHERE (
-    //          business_unit <> '' AND business_unit IS NOT null
+    //          business_unit <> '' AND business_unit IS NOT NULL
     //          OR
-    //          employee_name <> '' AND employee_name IS NOT null
+    //          employee_name <> '' AND employee_name IS NOT NULL
     //      )
     //      AND joining_date <> ''
-    //      AND joining_date IS NOT null
+    //      AND joining_date IS NOT NULL
 
 
     // ============================= SELECT EXAMPLES ================================
@@ -151,15 +151,15 @@ Some examples:
         , joining_date != ''
         , joining_date != null
     )`
-    // The corresponding SQL query would be:
+    // The corresponding T-SQL query would be:
     //      SELECT TOP 1 COUNT(1) FROM employeeTable
     //      WHERE (
-    //          business_unit <> '' AND business_unit IS NOT null
+    //          business_unit <> '' AND business_unit IS NOT NULL
     //          OR
-    //          employee_name <> '' AND employee_name IS NOT null
+    //          employee_name <> '' AND employee_name IS NOT NULL
     //      )
     //      AND joining_date <> ''
-    //      AND joining_date IS NOT null
+    //      AND joining_date IS NOT NULL
 
 ```
 
