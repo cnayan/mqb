@@ -1,7 +1,7 @@
 # µ Query Language to JSON Query Builder
 Uses µ Query Language to build JSON query object for easy querying.
 
-# What is it?
+# What does it do?
 This service generates [Q-Server](https://github.com/cnayan/q-Server) compatible JSON query objects.
 
 # Why do we need it?
