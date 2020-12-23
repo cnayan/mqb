@@ -89,8 +89,8 @@ Some examples:
     // (starts with 'abc').
     `employeeTable(employee_name != "abc*")`
 
-    // Returns all fields from 'employeeTable' where 'employee_id' is greater than or equal to 100.
-    `employeeTable (employee_id >= 100)`
+    // Returns all fields from 'employeeTable' where 'employee_id' is greater than 100.
+    `employeeTable (employee_id > 100)`
 
     // Returns all fields from 'employeeTable' where 'employee_id' is greater than or equal to 100.
     `employeeTable (employee_id >= 100)`
