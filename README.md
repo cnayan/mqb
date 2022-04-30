@@ -183,7 +183,7 @@ Here is a sample input and output received:
     db: 'ABCD',
 
     select: [
-        '2 # employeeTable',
+        '2 * employeeTable',
         'employeeTable (employee_id > 1000)'
     ],
 
